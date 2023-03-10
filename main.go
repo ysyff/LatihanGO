@@ -3,39 +3,26 @@ package main
 import "fmt"
 
 func main() {
-	// Menampilkan tipe data dari variabel i
-	var i int = 23
-	fmt.Printf("Tipe data dari variabel i: %T\n", i)
+    fmt.Println("Yusuf Syahputra || 1955617840-478")
+   for i :=0; i<5; i++ {
+      fmt.Println("Nilai i = ",i)
+   }
 
-	// Menampilkan nilai boolean j: true
-	var j bool = true
-	fmt.Printf("Menampilkan nilai boolean j: %t\n", j)
-	
-	// Menampilkan unicode Russia: Я (ya)
-	fmt.Printf("Menampilkan unicode Russia: %c\n", '\u042F')
+   var j int = 0;
+   for   j<5 {
+      fmt.Println("Nilai j = ",j)
+      j++
+   }
 
-	// Menampilkan nilai base 10: 21
-	var n int = 21
-	fmt.Printf("Menampilkan nilai base 10: %d\n", n)
+   for pos, char := range "САШАРВО" {
+      fmt.Printf("character %#U starts at byte position %d\n", char, pos)
+   }
 
-	// Menampilkan nilai base 8: 25
-	fmt.Printf("Menampilkan nilai base 8: %o\n", n)
-
-	// Menampilkan nilai base 16: f
-	fmt.Printf("Menampilkan nilai base 16: %x\n", 15)
-
-	// Menampilkan nilai base 16: F13
-	fmt.Printf("Menampilkan nilai base 16: %X\n", 0xF13)
-
-	// Menampilkan unicode karakter Я: U+042F
-	fmt.Printf("Menampilkan unicode karakter Я: %U\n", 'Я')
-
-	// Menampilkan float64 k: 123.456000
-	var k float64 = 123.456
-	fmt.Printf("Menampilkan float: %f\n", k)
-
-	// Menampilkan float64 k dalam notasi scientific: 1.234560e+02
-	fmt.Printf("Menampilkan float scientific: %e\n", k)
-
-	
+   for {
+      if j++; j <= (10) {
+         fmt.Println("Nilai j = ",j)
+      }else{
+         break
+      }
+   }
 }
