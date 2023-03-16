@@ -1,28 +1,35 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-    fmt.Println("Yusuf Syahputra || 1955617840-478")
-   for i :=0; i<5; i++ {
-      fmt.Println("Nilai i = ",i)
-   }
 
-   var j int = 0;
-   for   j<5 {
-      fmt.Println("Nilai j = ",j)
-      j++
-   }
+   
+    fmt.Println("Challange 3|| Yusuf Syahputra || 1955617840-478")
+   // Input kalimat
+	kalimat := "selamat malam"
 
-   for pos, char := range "САШАРВО" {
-      fmt.Printf("character %#U starts at byte position %d\n", char, pos)
-   }
+	// Konversi kalimat menjadi lowercase agar tidak terpengaruh huruf besar atau kecil
+	kalimat = strings.ToLower(kalimat)
 
-   for {
-      if j++; j <= (10) {
-         fmt.Println("Nilai j = ",j)
-      }else{
-         break
-      }
-   }
+
+	// Deklarasi map untuk menyimpan jumlah kemunculan huruf
+	hurufCount := make(map[rune]int)
+
+	// Looping untuk setiap karakter dalam kalimat
+	for _, karakter := range kalimat {
+      // mencetak karakter 
+      fmt.Printf("%c \n", karakter)
+		// Tambahkan jumlah kemunculan huruf dalam map
+		hurufCount[karakter]++
+	}
+
+	// Tampilkan hasil perhitungan kemunculan huruf
+	fmt.Println("Hasil perhitungan kemunculan huruf:")
+	for huruf, count := range hurufCount {
+		fmt.Printf("%c: %d ,", huruf, count)
+	}
 }
